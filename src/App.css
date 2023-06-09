@@ -2,9 +2,74 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: Montserrat, Georgia, 'Times New Roman', Times, serif;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #000;
+  list-style: none;
 }
 
 body {
   background-color: #fafafa;
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+}
+
+header .bs-cms {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #0290ff;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav li {
+  color: #121212;
+  font-size: 0.813rem;
+  font-weight: 300;
+}
+
+nav li:nth-child(3) {
+  opacity: 0.5;
+}
+
+header .user-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1px solid #e8e8e8;
+  border-radius: 50%;
+  padding: 0.5rem;
+  width: 2.1rem;
+  height: 2.1rem;
+  cursor: pointer;
+}
+
+header .user-profile i {
+  color: #0290ff;
+}
+
+.progress-circular-bar {
+  border: 3px solid #307bbe;
+  border-left-color: #e8e8e8;
+  border-radius: 50%;
+  height: 4.25rem;
+  margin-right: 0.7rem;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: .4s ease-in;
+  width: 4.25rem;
 }
