@@ -195,7 +195,42 @@ div.chapter-info .update-progress-btn {
   margin-right: 7rem;
 }
 
-.book-fomr {
+.book-form {
   margin-top: 2rem;
+  margin-bottom: 10rem;
 }
 
+.book-form h2 {
+  font-size: 1.45rem;
+  font-weight: bold;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.book-form input,
+#category {
+  background-color: #fff;
+  padding: 0.6rem;
+  margin-right: 2rem;
+  border-radius: 5px;
+}
+
+.book-form #category option:nth-child(1) {
+  opacity: 0.5;
+}
+
+.book-form .book-title-input {
+  width: 57%;
+}
+
+.book-form #category {
+  width: 20%;
+}
+
+.book-form .add-book-btn {
+  background-color: #0290ff;
+  color: #e8e8e8;
+  padding: 0.5rem;
+  width: 11.5rem;
+  border-radius: 4px;
+}
