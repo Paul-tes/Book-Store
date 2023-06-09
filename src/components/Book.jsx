@@ -1,13 +1,20 @@
+import BookStatus from './BookStatus';
+
 const Book = () => (
-  <div className="book-status">
-    <div className="progression-bar">
-      <div className="progress-circular-bar" />
-      <div className="progress-percent">
-        <div className="amount">64%</div>
-        <div className="completion">Completed</div>
+  <div className="book-card">
+    <div>
+      <div className="categoy">Action</div>
+      <div className="book-name">Book1</div>
+      <div className="author">Paul</div>
+      <div className="action-btns-container">
+        <button type="button" className="action-btn comment">Comments</button>
+        <button type="button" className="action-btn remove">Remove</button>
+        <button type="button" className="action-btn edit">Edit</button>
       </div>
     </div>
-    <di className="progress" />
+    <div>
+      <BookStatus />
+    </div>
   </div>
 );
 
