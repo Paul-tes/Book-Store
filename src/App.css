@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #000;
+  list-style: none;
+  background: none;
+  border: none;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+}
+
+header .bs-cms {
+  font-size: 2.375rem;
+  font-weight: bold;
+  color: #0290ff;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav li {
+  color: #121212;
+  font-size: 0.913rem;
+  font-weight: 400;
+}
+
+nav li:nth-child(3) {
+  opacity: 0.5;
+}
+
+header .user-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1px solid #e8e8e8;
+  border-radius: 50%;
+  padding: 0.5rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  cursor: pointer;
+}
+
+header .user-profile i {
+  color: #0290ff;
+}
+
+.book-card-list {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.5rem;
+  margin: 2.313rem 6.25rem 0;
+}
+
+.book-card {
+  border: solid 1px #e8e8e8;
+  display: flex;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book-card .categoy {
+  opacity: 0.5;
+  font-size: 0.975rem;
+  font-weight: bold;
+  color: #121212;
+  padding: 0.4rem;
+}
+
+.book-card .book-name {
+  font-size: 1.575rem;
+  font-weight: bold;
+  color: #121212;
+  padding: 0.4rem;
+}
+
+.book-card .action-btns-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.book-card .action-btns-container button {
+  font-size: 0.995rem;
+  font-weight: 300;
+  letter-spacing: normal;
+  color: #4386bf;
+  padding: 0.4rem;
+}
+
+.book-card .action-btns-container button:nth-last-child(-n+2) {
+  border-left: solid 1px #e8e8e8;
+}
+
+.book-card .author {
+  font-size: 0.975rem;
+  font-weight: 300;
+  color: #4386bf;
+  padding: 0.4rem;
+  margin-top: -0.8rem;
+}
+
+.book-card .book-status {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.book-status .progression-bar {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  padding: 1rem;
+  border-right: solid 1px #e8e8e8;
+  width: 90%;
+}
+
+.progress-circular-bar {
+  border: 3px solid #307bbe;
+  border-left-color: #e8e8e8;
+  border-radius: 50%;
+  height: 4.25rem;
+  margin-right: 0.7rem;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: 1.4s ease-in;
+  width: 4.25rem;
+}
+
+.progress-circular-bar:hover {
+  transform: rotate(405deg);
+  border: 3px solid hsl(27, 97%, 51%);
+  border-left-color: rgb(48, 123, 190);
+  border-left-color: #e8e8e8;
+}
+
+.progress-percent .amount {
+  font-size: 2rem;
+}
+
+.progress-percent .completion {
+  font-size: 0.975rem;
+  opacity: 0.5;
+}
+
+div.chapter-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 150%;
+}
+
+div.chapter-info .heading {
+  font-size: 1.013rem;
+  opacity: 0.5;
+  color: #121212;
+}
+
+div.chapter-info .current-chapter {
+  font-size: 1.013rem;
+  color: #121212;
+}
+
+div.chapter-info .update-progress-btn {
+  background-color: #0290ff;
+  padding: 0.5rem;
+  color: #fff;
+  text-align: center;
+  width: 12rem;
+  border-radius: 3px;
+  margin-right: 7rem;
+}
+
+.book-form {
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+}
+
+.book-form h2 {
+  font-size: 1.45rem;
+  font-weight: bold;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.book-form input,
+#category {
+  background-color: #fff;
+  padding: 0.6rem;
+  margin-right: 2rem;
+  border-radius: 5px;
+}
+
+.book-form #category option:nth-child(1) {
+  opacity: 0.5;
+}
+
+.book-form .book-title-input {
+  width: 57%;
+}
+
+.book-form #category {
+  width: 20%;
+}
+
+.book-form .add-book-btn {
+  background-color: #0290ff;
+  color: #e8e8e8;
+  padding: 0.5rem;
+  width: 11.5rem;
+  border-radius: 4px;
+}
