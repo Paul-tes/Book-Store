@@ -7,6 +7,7 @@ const Book = ({
   id, title, author, category,
 }) => {
   const dispatch = useDispatch();
+
   const removeOnClick = (event) => {
     const { id } = event.target;
     dispatch(removeBook(id));
