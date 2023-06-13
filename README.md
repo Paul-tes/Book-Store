@@ -35,9 +35,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [BookStore] <a name="about-project"></a>
 
-**[your_project__name]** is a web Application for to store books and user can track thier progress, delete, and update book.
+**[BookStore]** is a web Application for to store books and user can track thier progress, delete, and update book.
 
 ## 🛠 Built With <a name="built-with"></a>
 
