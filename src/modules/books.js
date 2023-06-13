@@ -1,4 +1,4 @@
-const books = [
+const bookList = [
   {
     id: 'item1',
     title: 'The Great Gatsby',
