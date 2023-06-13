@@ -144,8 +144,7 @@ Example:
 👤 **Paul**
 
 - GitHub: [@paul-tes](https://github.com/paul-tes)
-- Twitter: [@paul](https://twitter.com/twitterhandle)
-- LinkedIn: [paul tesfaye](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [paul tesfaye](https://www.linkedin.com/in/paul-tesfaye-687820215/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
