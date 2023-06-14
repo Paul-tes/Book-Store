@@ -1,9 +1,7 @@
 import { useSelector } from 'react-redux';
 import Book from './Book';
-// import store from '../redux/store';
 
 const BookList = () => {
-  // const dispatch = useDispatch();
   const { books } = useSelector((store) => store.books);
   return (
     <div className="book-container">
