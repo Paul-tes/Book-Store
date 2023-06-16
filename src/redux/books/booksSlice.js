@@ -51,13 +51,13 @@ const bookSlice = createSlice({
         author: 'John Smith',
         category: book.payload.category,
       };
-      console.log(newBook);
-      console.log(state.books);
       state.books.push(newBook);
+      console.log(JSON.stringify(newBook));
+      console.log(createBook(JSON.stringify(newBook)));
     },
     removeBook: (state, action) => {
       const id = action.payload;
-      const updatedBooks = state.books.filter((book) => book.itetm_id !== id);
+      const updatedBooks = state.books.filter((book) => book.item_id !== id);
       return { ...state, books: updatedBooks };
     },
   },
