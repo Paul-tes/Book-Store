@@ -52,11 +52,11 @@ const bookSlice = createSlice({
         category: book.payload.category,
       };
       state.books.push(newBook);
-      console.log(JSON.stringify(newBook));
-      console.log(createBook(JSON.stringify(newBook)));
+      createBook(JSON.stringify(newBook));
     },
     removeBook: (state, action) => {
       const id = action.payload;
+      deleteBook(id);
       const updatedBooks = state.books.filter((book) => book.item_id !== id);
       return { ...state, books: updatedBooks };
     },
