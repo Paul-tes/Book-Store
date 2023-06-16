@@ -1,5 +1,8 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import bookList from '../../modules/books';
+
+const url = '';
+const id = 'd1euisQMjzFI5gxzQoD7';
 
 const initialState = {
   books: bookList,
