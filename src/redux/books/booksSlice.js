@@ -16,9 +16,10 @@ export const fetchBooks = createAsyncThunk('books/getBooks', async () => {
       item_id: key,
       ...response.data[key][0],
     }));
+
     return books;
   } catch (error) {
-    isRejectedWithValue(error.message);
+    return isRejectedWithValue(error.message);
   }
 });
 
@@ -50,11 +51,13 @@ const bookSlice = createSlice({
         author: 'John Smith',
         category: book.payload.category,
       };
+      console.log(newBook);
+      console.log(state.books);
       state.books.push(newBook);
     },
     removeBook: (state, action) => {
       const id = action.payload;
-      const updatedBooks = state.books.filter((book) => book.id !== id);
+      const updatedBooks = state.books.filter((book) => book.itetm_id !== id);
       return { ...state, books: updatedBooks };
     },
   },
