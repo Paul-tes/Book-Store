@@ -82,6 +82,7 @@ header .user-profile i {
   gap: 0.5rem;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .book-card .categoy {
@@ -193,6 +194,12 @@ div.chapter-info .update-progress-btn {
   width: 12rem;
   border-radius: 3px;
   margin-right: 7rem;
+}
+
+div.break-line {
+  height: 0.125rem;
+  margin: 2.5rem 0.063rem 1.813rem 0;
+  border: solid 1px #e8e8e8;
 }
 
 .book-form {
